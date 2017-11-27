@@ -1,0 +1,94 @@
+{
+  "datastores": [
+    {
+      "name": "AdventureWorks",
+      "datastore_stage_num": 1,
+      "topics": [
+        {
+          "source": "AdventureWorks",
+          "target": "AwEmployee",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwOrgStructure",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwPerson",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwProduction",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwPurchasing",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwSales",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AwTypes",
+          "type": "topic"
+        },
+        {
+          "source": "AdventureWorks",
+          "target": "AgTypes",
+          "type": "topic"
+        }
+      ]
+    },
+    {
+      "name": "AdventureTravel",
+      "datastore_stage_num": 1,
+      "topics": [
+        {
+          "source": "AdventureTravel",
+          "target": "AgTypes",
+          "type": "topic"
+        }
+      ]
+    },
+    {
+      "name": "AdventureGear",
+      "datastore_stage_num": 1,
+      "topics": [
+        {
+          "source": "AdventureGear",
+          "target": "AgTypes",
+          "type": "topic"
+        }
+      ]
+    },
+    {
+      "name": "AdventureGroup",
+      "datastore_stage_num": 5,
+      "topics": []
+    }
+  ],
+  "links": [
+    {
+      "source": "AdventureWorks",
+      "target": "AdventureGroup",
+      "type": "dataflow"
+    },
+    {
+      "source": "AdventureGear",
+      "target": "AdventureGroup",
+      "type": "dataflow"
+    },
+    {
+      "source": "AdventureTravel",
+      "target": "AdventureGroup",
+      "type": "dataflow"
+    }
+  ]
+}
