@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "name": "Person",
+      "type": "object",
+      "id": 0
+    },
+    {
+      "name": "instrument",
+      "type": "object",
+      "id": 1
+    },
+    {
+      "name": "music studio",
+      "type": "object",
+      "id": 2
+    },
+    {
+      "name": "friend",
+      "type": "object",
+      "id": 3
+    },
+    {
+      "name": "make music",
+      "type": "fact",
+      "roles": 4,
+      "named": true,
+      "id": 4
+    },
+    {
+      "name": "employee",
+      "type": "object",
+      "id": 5
+    },
+    {
+      "name": "Loshe",
+      "type": "object",
+      "id": 6
+    },
+    {
+      "name": "disconnected",
+      "type": "object",
+      "id": 7
+    },
+    {
+      "name": "employs",
+      "type": "fact",
+      "roles": 3,
+      "named": false,
+      "id": 8
+    },
+    {
+      "name": "ride",
+      "type": "fact",
+      "roles": 2,
+      "named": true,
+      "id": 9
+    },
+    {
+      "name": "bike",
+      "type": "object.value",
+      "id": 10
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 4,
+      "role": 1
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "role": 2
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "role": 3
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "role": 4
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "role": 1
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "role": 2
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "role": 3
+    },
+    {
+      "source": 0,
+      "target": 9,
+      "role": 1
+    },
+    {
+      "source": 10,
+      "target": 9,
+      "role": 2
+    }
+  ]
+}

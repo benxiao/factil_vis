@@ -6,16 +6,16 @@ module.exports = {
         rules: [
             {
                 test: /\.ts|\.jsx$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
+                use: 'ts-loader'
             }
         ]
     },
     resolve: {
         extensions: [ '.tsx', '.ts', '.js' ]
     },
+    devtool: "source-map",
     output: {
-        filename: 'vis.js',
+        filename: 'output.js',
         path: path.resolve(__dirname, 'dist')
     }
 };

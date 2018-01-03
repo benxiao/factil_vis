@@ -2,10 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="dist/vis.js"></script>
+    <title>fact based modeling (elemental view)</title>
+    <style>
+        .background {
+            stroke: white;
+            stroke-width: 1px;
+            fill: white;
+        }
+
+        .object {
+            stroke: black;
+            stroke-width: 1.5px;
+            cursor: move;
+            fill: white;
+        }
+
+        .valueObject {
+            stroke: black;
+            stroke-width: 2px;
+            cursor: move;
+            fill: white;
+            stroke-dasharray: 10, 10, 10, 10;
+        }
+
+        .fact {
+            fill: none;
+            stroke: black;
+            stroke-width: 3px;
+        }
+
+        .factNamedFactBox {
+            stroke: black;
+            stroke-width: 3px;
+            fill: none;
+        }
+
+        .factRoleBox {
+            stroke: black;
+            stroke-width: 3px;
+            fill: none;
+        }
+
+        .link {
+            fill: none;
+            stroke: black;
+            stroke-width: 3px;
+            /*marker-end: url(#end-arrow);*/
+        }
+
+        .linkEndPoint {
+            fill: blueviolet;
+        }
+
+        .objectLabel {
+            fill: black;
+            font-family: Verdana;
+            font-size: 25px;
+            text-anchor: middle;
+            cursor: move;
+        }
+
+        .factLabel {
+            fill: black;
+            font-family: Verdana;
+            font-size: 18px;
+            text-anchor: middle;
+            cursor: move;
+        }
+
+    </style>
 </head>
 <body>
-<div id="chart"></div>
+<script src="extern/cola.js"></script>
+<script src="dist/output.js"></script>
 </body>
 </html>
